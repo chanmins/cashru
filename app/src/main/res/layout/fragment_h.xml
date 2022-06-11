@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:name="com.google.android.gms.maps.MapFragment"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HFragment"
-    tools:ignore="SpeakableTextPresentCheck">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#C6122000"
-        android:orientation="vertical"
-        android:paddingTop="8dp">
+        android:layout_marginLeft="@dimen/pageMarginAndOffset"
+        android:layout_marginRight="@dimen/pageMarginAndOffset"
+        android:layout_height="@dimen/frameSize"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/img1"
             android:layout_width="match_parent"
-            android:layout_height="292dp"
+            android:layout_height="match_parent"
             android:src="@drawable/okggu" />
 
         <ImageView
@@ -26,5 +22,5 @@
             android:layout_height="match_parent"
             android:src="@drawable/img1" />
 
-    </LinearLayout>
-</ScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -23,16 +23,15 @@ class HFragment : Fragment() {
     //override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     //    mapFrag = requireFragmentManager().findFragmentById(R.id.map) as MapFragment
     //    mapFrag.getMapAsync(this)
+
     //}
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_h, container, false)
     }
-
     /*override fun onMapReady(map: GoogleMap) {
         gMap = map
         val marker = LatLng(37.568256, 126.897240)
